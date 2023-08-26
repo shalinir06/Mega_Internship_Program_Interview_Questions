@@ -1,0 +1,93 @@
+1. What is a RDBMS
+	A relational database management system (RDBMS) is a software system designed to manage data in a relational database.
+	A relational database is a database that stores data in tables. Each table consists of rows and columns. The rows represent records, 
+	and the columns represent the fields in each record.
+
+2. SQL VS SQL server
+	SQL: SQL stands for Structured Query Language. It is a language used to manage data in a relational database. SQL statements are used to create, update, and delete data in a database. SQL can also be used to query data in a database.
+	SQL Server: SQL Server is a relational database management system (RDBMS) that uses SQL. 
+	It is a commercial product developed by Microsoft. SQL Server is one of the most popular RDBMSs in the world
+
+3. What are all the properties of a sql?
+	Relational: SQL is a relational language, which means that it is designed to work with data that is stored in tables.
+	Declarative: SQL is a declarative language, which means that it specifies what data you want to retrieve, not how to retrieve it.
+	Procedural: SQL is also a procedural language, which means that it allows you to write code that performs specific tasks.
+
+4. Explain any 3 different databases you know?
+	MySQL: MySQL is an open-source relational database management system (RDBMS) developed by Oracle Corporation. MySQL is used by a wide variety of applications, 
+	including websites, e-commerce applications, and enterprise applications.
+	PostgreSQL: PostgreSQL is an open-source object-relational database management system (ORDBMS) developed by the PostgreSQL Global Development Group. 
+	It is a powerful and versatile RDBMS that is used by a wide variety of applications, including websites, e-commerce applications, and enterprise applications.
+	MongoDB: MongoDB is a NoSQL document database developed by MongoDB, Inc. It is a non-relational database that stores data in JSON-like documents
+
+5. When to adopt sql database?
+	Your data is relational. 
+	You need to scale your database.
+	You need to work with a variety of data types. 
+	You are familiar with SQL.
+
+
+6. List out the 4 important points about Primary Key (PK)
+	Unique: A primary key must be unique for each row in a table. This means that no two rows can have the same value in the primary key column.
+	Not Null: A primary key cannot be null. This means that every row in a table must have a value in the primary key column.
+	It can be used to create indexes, which can improve the performance of queries.
+	Consistent: The value in the primary key column must always be consistent. This means that the value cannot change once it is assigned to a row.
+
+7. Diff DDL VS DML
+	DDL: DDL statements are used to define the structure of a database. They are used to create new tables, add columns to existing tables, rename, 
+	truncate delete the complete data from the table without deleting the table structure, and drop tables. DDL statements are also used to create views, 
+	which are virtual tables that are based on existing tables. DDL commands are auto-committed
+	DML: DML statements are used to manipulate the data in a database. They are used to insert new data into tables, update existing data in tables, 
+	delete data from tables, and select data from tables. DML statements can also be used to perform calculations on data and to sort and group data.  
+	DML commands are not auto-committed
+
+8. ACID property of a database
+	ACID: A set of properties that guarantee the integrity of data in a database.
+	Atomicity: A transaction is either completely successful or completely unsuccessful. If any part of a transaction fails, the entire transaction is rolled back.
+	Consistency: The database remains in a consistent state at all times. This means that the data in the database always reflects the real world.
+	Isolation: Transactions are isolated from each other. This means that the changes made by one transaction do not affect other transactions that are running 
+	at the same time.
+	Durability: Once a transaction is committed, its changes are permanent. This means that the changes cannot be lost even if the database crashes.
+
+9. Diff Unique and primary key
+	Unique key: A unique key is a column (or a combination of columns) in a table that cannot have duplicate values. 
+	However, a unique key does not have to be the primary key of the table.
+	Primary key: A primary key is a column (or a combination of columns) in a table that uniquely identifies each row in the table. 
+	A primary key cannot have duplicate values and cannot be null.
+
+10. Truncate is DDL or DML
+	TRUNCATE is a DDL(Data Definition Language) command and is used to delete all the rows or tuples from a table. 
+	Unlike the DELETE command, the TRUNCATE command does not contain a WHERE clause. 
+	In the TRUNCATE command, the transaction log for each deleted data page is not recorded. The TRUNCATE command is fast. 
+	We cannot roll back the data after using the TRUNCATE command.
+
+11. What is mean by Foreign key and its uses
+	A foreign key is a column (or a combination of columns) in one table that refers to the primary key of another table. 
+	Foreign keys are used to enforce referential integrity between tables. Referential integrity is a set of rules that ensures that the data in 
+	one table is consistent with the data in another table.
+
+12. What are the different constraints in SQL and explain
+	Primary key constraint: A primary key constraint is a column (or a combination of columns) in a table that uniquely identifies each row in the table. 
+	A primary key constraint cannot have duplicate values and cannot be null.
+	Unique constraint: A unique constraint is a column (or a combination of columns) in a table that cannot have duplicate values. 
+	However, a unique constraint does not have to be the primary key of the table.
+	Foreign key constraint: A foreign key constraint is a column (or a combination of columns) in one table that refers to the primary key of another table. 
+	Foreign keys are used to enforce referential integrity between tables.
+	Check constraint: A check constraint is a constraint that specifies a condition that the values in a column must satisfy. 
+	For example, a check constraint could specify that the values in a salary column must be greater than or equal to 0.
+	Not null constraint: A not null constraint specifies that a column cannot have a null value.
+	Default constraint: A default constraint specifies a default value that is used for a column if no value is specified.
+
+13. Diff between char and varchar
+	CHAR: A CHAR data type is a fixed-length character string. This means that the column always takes up the same amount of space, 
+	regardless of the length of the string that is stored in it.
+	VARCHAR: A VARCHAR data type is a variable-length character string. This means that the column can store strings of different lengths, 
+	up to a maximum length that is specified when the column is created
+
+14. Diff between float, double and decimal
+	Float: A float data type is a floating-point number. This means that the number can have a decimal point and a fractional part. 
+	The precision of a float number is limited, which means that it cannot store very large or very small numbers accurately.
+	Double: A double data type is also a floating-point number. However, it has a higher precision than a float number, which means that it can store very large 
+	or very small numbers more accurately.
+	Decimal: A decimal data type is a fixed-point number. This means that the number has a fixed number of digits to the right of the decimal point. 
+	The precision of a decimal number is higher than that of a float or double number, which means that it can store very precise numbers
