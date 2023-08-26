@@ -1,0 +1,103 @@
+DATA
+1. How do you define a data and a meta data
+	Data: Facts and statistics that can be used to describe or measure something.
+	Metadata: Data about data. It describes the data and provides information about its structure, content, and context.
+
+2. Diff between histogram and a bar chart
+	Histogram: A graphical representation of the distribution of continuous data.
+	Bar chart: A graphical representation of the distribution of categorical data.
+	For example, a histogram could be used to represent the distribution of heights of people, 
+	while a bar chart could be used to represent the distribution of favourite colors of people.
+
+3. what are all the different types of categorical data
+	Nominal data: Data that is used to name or classify things. The categories in nominal data are not ordered. 
+	For example, the categories of eye color (blue, brown, green, hazel) are nominal data.
+	Ordinal data: Data that has a natural order, but the order does not have a numerical meaning. 
+	For example, the categories of a survey question (strongly agree, agree, disagree, strongly disagree) are ordinal data.
+
+4. How do you diff quantitive and a qualitive data
+	Quantitative data: 
+	o	Data that can be measured and expressed as numbers. 
+	o	It can be used to answer questions about how much, how many, or how often something happens. 
+	o	For example, the number of students in a class, the average height of people in a country, or the number of times a website is visited 
+		are all quantitative data.
+	Qualitative data: 
+	o	Data that cannot be measured and is expressed in words or descriptions.
+	o	It can be used to answer questions about why, how, or what something is. 
+	o	For example, the reasons why people choose to buy a particular product, the descriptions of people's experiences, 
+		or the opinions of people on a particular topic are all qualitative data.
+
+5. What are all the continuous datatypes you are aware of
+	Float: A floating-point number with 32 bits of precision.
+	Double: A floating-point number with 64 bits of precision.
+	Decimal: A floating-point number with variable precision.
+
+BIG DATA
+1. What is a big data?
+	Big data is a term used to describe data sets that are too large and complex to be analyzed using traditional data processing methods. 
+	These datasets can be structured, semi-structured, or unstructured, and they can come from a variety of sources.
+
+2. When you will coin the data as a bigdata
+	When the data is too large, too complex, and too fast to be processed using traditional data processing methods.
+
+3. Arrange the data from bits to bigdata based on their sizes
+	Bits: The smallest unit of data.
+	Big data: Very large datasets that are too complex and/or voluminous to be analyzed using traditional data processing methods. 
+	Big data is typically measured in petabytes or exabytes. However, as the amount of data continues to grow, 
+	it is likely that we will need to start using even larger units of measurement, such as zettabytes and yottabytes.
+Here is a more detailed explanation of the different data sizes:
+	Bits: A bit is the smallest unit of data. It can have two values: 0 or 1.
+	Bytes: A byte is a group of 8 bits. It can represent 256 different values.
+	Kilobyte (KB): A kilobyte is a group of 1024 bytes.
+	Megabyte (MB): A megabyte is a group of 1024 kilobytes.
+	Gigabyte (GB): A gigabyte is a group of 1024 megabytes.
+	Terabyte (TB): A terabyte is a group of 1024 gigabytes.
+	Petabyte (PB): A petabyte is a group of 1024 terabytes.
+	Exabyte (EB): An exabyte is a group of 1024 petabytes.
+	Zettabyte (ZB): A zettabyte is a group of 1024 exabytes.
+	Yottabyte (YB): A yottabyte is a group of 1024 zettabytes.
+
+4. Arrange the tiny into to long int based on their byte size
+	Tiny: 1 byte
+	Short: 2 bytes
+	Int: 4 bytes
+	Long: 4 bytes (on 32-bit systems) or 8 bytes (on 64-bit systems)
+	Long long: 8 bytes
+
+5. Difference between char and varchar
+	CHAR: A CHAR data type is a fixed-length character string data type. This means that the string must always be the same length, 
+	even if the actual data is shorter. For example, a CHAR (10) data type would always be 10 characters long, even if the actual data is only 5 characters long.
+	VARCHAR: A VARCHAR data type is a variable-length character string data type. This means that the string can be any length, 
+	up to the maximum length of the data type. For example, a VARCHAR (10) data type can be anywhere from 1 to 10 characters long.
+
+
+6. Difference between double and float explain with an example
+	Float: A float is a floating-point number with 32 bits of precision. This means that it can represent a number with up to 7 decimal places of accuracy. 
+	For example, the float value 3.1415923 can be represented exactly, but the float value 1.2345678901234567 cannot be represented exactly.
+	Double: A double is a floating-point number with 64 bits of precision. This means that it can represent a number with up to 15 decimal places of accuracy. 
+	For example, the double value 3.141592653589793 can be represented exactly.
+
+7. Arrange the datypes based on their byte size (char,float,decimal,double,boolean,int,date,time)
+	Boolean: 1 byte
+	Char: 1 byte
+	Short: 2 bytes
+	Int: 4 bytes
+	Long: 4 bytes (on 32-bit systems) or 8 bytes (on 64-bit systems)
+	Long long: 8 bytes
+	Float: 4 bytes
+	Double: 8 bytes
+	Decimal: Varies (Some implementations use 8 bytes, while others use 16 bytes.)
+	Date: Varies (Some implementations use 4 bytes, while others use 8 bytes.)
+	Time: Varies (Some implementations use 4 bytes, while others use 8 bytes.)
+
+
+8. Difference between date and timestamp
+	Date: A date data type represents a specific date. It can be represented in a variety of formats, such as YYYY-MM-DD, DD-MM-YYYY, or MM/DD/YYYY.
+	Timestamp: A timestamp data type represents a date and time. It can be represented in a variety of formats, 
+	such as YYYY-MM-DD HH:MM:SS, DD-MM-YYYY HH:MM:SS, or MM/DD/YYYY HH:MM:SS.
+
+9. What are ordinal and nominal data
+	Ordinal data has a natural order, but the order does not have a numerical meaning. 
+	For example, the categories of a survey question (strongly agree, agree, disagree, strongly disagree) are ordinal data.
+	Nominal data is data that is used to name or classify things. The categories in nominal data are not ordered. 
+	For example, the categories of eye color (blue, brown, green, hazel) are nominal data.
