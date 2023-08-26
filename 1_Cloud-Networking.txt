@@ -1,0 +1,56 @@
+CLOUD-NETWORKING
+1. What is a cloud computing?
+	Cloud computing is the delivery of computing services—such as servers, storage, databases, networking, software, analytics, 
+	and intelligence—over the Internet ("the cloud") to offer faster innovation, flexible resources, and economies of scale.
+
+2. What are all the services you are aware about cloud computing?
+	Infrastructure as a Service (IaaS): Provides access to virtual machines, storage, and networking resources.
+	Platform as a Service (PaaS): Provides a development environment for building and deploying applications.
+	Software as a Service (SaaS): Provides access to software applications over the internet.
+	Function as a Service (FaaS): Provides a way to run code without having to worry about managing servers or infrastructure.
+
+3. What is the major difference between server and serverless computing?
+	Server computing: You are responsible for provisioning, configuring, and managing the servers. 
+	This can be a time-consuming and complex task, especially if you need to scale your infrastructure as your needs change. 
+	Serverless computing: The cloud provider takes care of all of this for you. 
+	You simply write your code and deploy it to the cloud, and the cloud provider will run it when needed and scale it up or down as traffic demands.
+
+4. Give an example for SAAS 
+	Salesforce: A cloud-based customer relationship management (CRM) software.
+	Dropbox: Cloud storage service
+	Google Workspace: Suite of productivity apps
+	Zoom: Video conferencing software
+	Slack: Business communication platform
+	Adobe Creative Cloud: Suite of creative apps
+
+5. What is the major difference between Azure and AWS
+	Azure: Developed by Microsoft, it is more focused on hybrid cloud and enterprise solutions.
+	AWS: Developed by Amazon, it is more focused on IaaS and has a wider range of services.
+
+6. Explain about the security with respect to cloud technology
+	Data security: Protecting data from unauthorized access, use, disclosure, or destruction.
+	Identity and access management: Controlling who has access to cloud resources and what they can do with them.
+	Compliance: Ensuring that cloud computing operations comply with applicable laws and regulations.
+	Disaster recovery: Protecting data and applications from outages and disasters.
+
+7. What are the 3 types of deployment in cloud?
+	Public cloud: Cloud services are provided by a third-party vendor and delivered over the internet.
+	Private cloud: Cloud services are hosted on a private network and managed by the organization.
+	Hybrid cloud: A combination of public and private clouds.
+
+8. How a client and a server works?
+	Client: Requests a service from the server. 
+	Server: Responds to the client's request and provides the requested service.
+
+9. How a partition occurs in the cloud?
+	Partitioning is a technique used to improve the performance and scalability of cloud databases.
+	By dividing a large dataset into smaller partitions, each partition can be processed independently.
+	This can improve performance by reducing the amount of data that needs to be processed by each query.
+	It can also improve scalability by allowing the database to be scaled out by adding more partition
+
+10. Explain the 5 significance of Cloud technology
+	Cost savings: Cloud computing can help businesses save money on hardware, software, and IT staff.
+	Scalability: Cloud computing can be scaled up or down as needed, so businesses can save money by only paying for the resources they use.
+	Agility: Cloud computing can help businesses be more agile and responsive to change.
+	Security: Cloud computing providers offer a variety of security features to protect businesses' data.
+	Innovation: Cloud computing can help businesses innovate by providing access to new technologies and services.
