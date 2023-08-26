@@ -1,0 +1,157 @@
+1. What is an ER Diagram ?
+	ER Diagram: An ER Diagram is a graphical representation of a database. It shows the entities, attributes, and relationships between entities in a database.
+	Entity: An entity is a person, place, thing, or concept about which data is stored in a database.
+	Attribute: An attribute is a characteristic of an entity.
+	Relationship: A relationship is a connection between two entities.
+
+2. When the ER Diagram is required ?
+	ER Diagrams are required when designing a new database or when modifying an existing database. 
+	This helps to ensure that the database is designed in a way that meets the needs of the users.
+	They are also used to communicate the design of a database to stakeholders.
+	Designing a new database: When designing a new database, an ER Diagram is used to identify the entities, attributes, 
+	and relationships that will be stored in the database.
+	Modifying an existing database: When modifying an existing database, an ER Diagram can be used to document the changes that are being made.
+
+3. What is an Entity?
+	Entity: An entity is a person, place, thing, or concept about which data is stored in a database. It is represented by a rectangle in an ER Diagram.
+	The name of the entity is written inside the rectangle. The attributes of the entity are written below the rectangle.
+
+4. What are diffrent types of entity?
+	Strong entity: A strong entity is an entity that has a primary key that uniquely identifies each instance of the entity. 
+	The primary key is a set of one or more attributes that uniquely identify each row in the table that represents the entity.
+	Weak entity: A weak entity is an entity that does not have a primary key of its own. 
+	The primary key of a weak entity is composed of the primary key of the entity on which it depends, plus one or more attributes of the weak entity.
+	In other words, a strong entity can exist on its own, while a weak entity cannot exist on its own and must be associated with a strong entity.
+
+5. What is diffrence between Strong and Weak Entity ?
+	Strong entity has its own primary key, while a weak entity does not have its own primary key and its existence depends on the primary key of a strong entity.
+	In general, strong entities are preferred over weak entities because they are more flexible and easier to manage. 
+	However, weak entities can be useful in certain situations, such as when an entity is dependent on another entity for its existence.
+
+6. What is an Attribute and explain types of attribute?
+	Attribute: An attribute is a property or characteristic of an entity. 
+	For example, the attributes of a Customer entity might include name, address, and phone number.
+	Simple attribute: A simple attribute is an attribute that has a single value. 
+	For example, the name attribute of a Customer entity is a simple attribute.
+	Composite attribute: A composite attribute is an attribute that is made up of multiple simple attributes. 
+	For example, the address attribute of a Customer entity might be a composite attribute that includes the street, city, state, and zip code.
+	Derived attribute: A derived attribute is an attribute that is calculated from other attributes. 
+	For example, the age attribute of a Customer entity might be a derived attribute that is calculated from the birthdate attribute.
+
+7. Give an example of derived Attributes?
+	Derived attribute: A derived attribute is an attribute that is calculated from other attributes.
+	Age: The age of a person can be calculated from the person's birthdate. 
+	For example, if a person's birthdate is 1980-01-01, then the person's age is 43 years old in 2023-08-26.
+Other examples of derived attributes include:
+	Total number of employees in a company
+	The average salary of employees in a company
+	Percentage of employees who are male
+	Number of orders placed by a customer
+	Total amount spent by a customer
+
+8. What are diffrent types of schema ?
+	Star schema: A star schema is a schema with one fact table and multiple dimension tables. 
+	The fact table stores the measurements of interest, and the dimension tables store the attributes that describe the measurements.
+	Snowflake schema: A snowflake schema is a schema with one fact table and multiple dimension tables, where the dimension tables are normalized. 
+	This means that the dimension tables are divided into smaller tables, each of which stores a specific attribute.
+
+9. Waht is Star Schema, when you will use it?
+	A star schema is a data modeling pattern that uses a central fact table to store metrics and 
+	multiple dimension tables to store attributes that describe those metrics.
+	It is used for reporting and analysis where you need to quickly join multiple tables to get the desired result.
+	To analyze sales data by product, customer, and time
+	To analyze customer churn by product, location, and age
+	To analyze website traffic by source, medium, and campaign
+
+10. what is Snowflake Schema when you will use it ?
+	A snowflake schema is a data modeling pattern that is a variation of the star schema.
+	It is used when you need to normalize the dimension tables to improve data integrity and reduce redundancy.
+	To analyze customer data by customer, address, and phone number
+	To analyze product data by product, category, and brand
+	To analyze website traffic data by source, medium, and campaign
+
+11. What is sub Dimmension Table ?
+	A subdimension table is a table that is linked to a dimension table and contains additional details about the dimension.
+	For example, a Product dimension table might have a subdimension table called Product_Category.
+	It is used to improve the performance of queries and to provide more flexibility in the way that data is analyzed.
+
+12. What are diffrent kinds of key constrains available in RDBMS ?
+	Primary key: A primary key is a unique identifier for each row in a table. This means that no two rows in a table can have the same primary key value. 
+	The primary key is used to uniquely identify each row in a table, and it is often used to join tables together. Unique and Not null.
+	Foreign key: A foreign key is a column in one table that references the primary key of another table. 
+	This means that the value of the foreign key must exist in the primary key of the other table. 
+	Foreign keys are used to enforce referential integrity between tables.
+	Unique key: A unique key is a column or combination of columns that cannot have duplicate values. 
+	This means that no two rows in a table can have the same value for the unique key columns. 
+	Unique keys are often used to enforce business rules, such as ensuring that each customer has a unique customer ID.
+	Check constraint: A check constraint is a constraint that specifies a condition that the values in a column or combination of columns must satisfy. 
+	For example, you could create a check constraint that specifies that the age of a customer must be greater than or equal to 18.
+	NOT NULL constraint: A NOT NULL constraint specifies that a column cannot have a NULL value. 
+	This means that every row in the table must have a value for the column. 
+	NOT NULL constraints are often used to ensure that the data in a column is accurate and complete.
+
+13. Can we add more than one one primary key in a table ?
+	No, you cannot add more than one primary key in a table. A primary key is a unique identifier for each row in a table, 
+	and it is used to uniquely identify each row in a table. If you have multiple primary keys, then it is not possible to uniquely identify each row in the table.
+	However, you can create a composite primary key, which is a primary key that is made up of multiple columns. 
+	For example, you could create a composite primary key for a Customer table that consists of the customer_id and customer_name columns.
+
+14. Can we insert duplicate values in Primary key column ?
+	No, you cannot insert duplicate values in a primary key column. 
+	A primary key is a unique identifier for each row in a table, and it is used to uniquely identify each row in a table. 
+	If you insert a duplicate value in the primary key column, then the database will not be able to uniquely identify the row.
+
+15. What is a foreign Key ?
+	A foreign key is a column in one table that references the primary key of another table.
+	It is used to enforce referential integrity between tables.
+
+16. Can we insert a value to the Foreign key column in Fact Table without adding to the Dimension table ?
+	No, you cannot insert a value to the foreign key column in the fact table without adding to the dimension table. 
+	This is because the foreign key column in the fact table references the primary key column in the dimension table. 
+	If the value of the foreign key column does not exist in the primary key column of the dimension table, 
+	then the database will not be able to uniquely identify the row in the fact table.
+
+18. Identitfy the Dimension and Fact table in a ER Diagram ?
+	Dimension tables: Dimension tables describe the context of the data in the fact table. 
+	They typically contain descriptive attributes, such as time, location, and product. For example, a dimension table for a sales fact table might include 
+	attributes such as product_id, product_name, product_category, and time_id.
+	Fact tables: Fact tables store the measurements of interest. They typically contain quantitative attributes, such as sales, cost, and quantity. 
+	For example, a sales fact table might include attributes such as sales_amount, cost_amount, and quantity_sold.
+	The dimension tables are usually connected to the fact table through foreign keys. 
+	This ensures that the data in the fact table is always consistent with the data in the dimension tables
+
+19. What is Stored Procedure, explain its purpose ?
+	Stored procedure: A stored procedure is a set of SQL statements that are grouped together and saved as a single unit. 
+	Stored procedures are stored in the database and can be executed by calling the procedure name.
+	It is used to improve the performance, security, and reusability of SQL code.
+
+
+20. What is use of Indexing in SQL?
+	Indexing: Indexing is a way to organize data in a database so that it can be retrieved more quickly. 
+	An index is a data structure that stores the location of rows in a table that match a given value.
+	It is used to improve the performance of queries by reducing the number of rows that need to be scanned.
+
+21. How to copy data from one table to another ?
+	The SELECT INTO statement is used to copy data from one table to another
+	SELECT INTO destination_table
+		(column1, column2, ...)
+	FROM source_table
+	Source table: The source table is the table that contains the data that you want to copy.
+	Destination table: The destination table is the table where you want to copy the data.
+	For example, the following statement copies the data from the Customer table to the New_Customer table:
+	SELECT INTO New_Customer
+		(customer_id, customer_name, customer_email)
+	FROM Customer;
+
+22. How to create one table from another table ?
+	CREATE TABLE AS statement: The CREATE TABLE AS statement is used to create a new table based on the data in an existing table. The syntax is as follows:
+	CREATE TABLE destination_table AS
+		SELECT column1, column2, ...
+	FROM source_table;
+	Source table: The source table is the table that contains the data that you want to copy.
+	Destination table: The destination table is the table where you want to copy the data.
+	For example, the following statement creates a new table called New_Customer based on the data in the Customer table:
+	CREATE TABLE New_Customer AS
+		SELECT customer_id, customer_name, customer_email
+	FROM Customer;
+	This statement will create a new table called New_Customer with the same columns and data as the Customer table.
