@@ -1,0 +1,37 @@
+1. What are windows function?
+	Window functions are functions that operate on a window of rows, rather than on the entire result set.
+	Window functions are often used to calculate moving averages, cumulative sums, and other statistical measures.
+
+2. What are CTE?
+	CTEs (Common Table Expressions) are temporary named tables created within a query.
+	CTEs can be used to improve the readability and performance of queries.
+
+3. How to identify duplicates?
+	Use the DISTINCT keyword.
+	The DISTINCT keyword returns only unique values in a column.
+
+4. Use case of Row_num()
+	ROW_NUM() assigns a sequential number to each row in the result set.
+	It is useful for ranking rows or for displaying a sequential number for each row.
+
+5. How row_id differes from row_num()
+	ROW_ID(): The ROW_ID() function returns the unique identifier for each row in the result set.
+	ROW_NUM(): The ROW_NUM() function assigns a sequential number to each row in the result set.
+
+6. Where to use partition?
+	The PARTITION BY clause is used to divide the result set into partitions before applying aggregate functions or window functions.
+	This can improve the performance of queries by reducing the amount of data that needs to be processed.
+
+7. Difference between a table and a CTE
+	A table is a permanent data structure, while a CTE is a temporary data structure.
+	A table is stored in the database, while a CTE is created and destroyed within a query.
+
+
+8. Difference between a rank and dense rank function give a use case
+	RANK() function assigns ranks to rows within a window, skipping ranks for duplicate values.
+	DENSE_RANK() function assigns ranks to rows within a window, without skipping ranks for duplicate values.
+
+
+9. When to use a lag and led function
+	LAG(): The LAG() function returns the value of a column in the previous row.
+	LEAD(): The LEAD() function returns the value of a column in the next row.
