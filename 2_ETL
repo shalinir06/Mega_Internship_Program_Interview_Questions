@@ -1,0 +1,67 @@
+1.	What is a ETL ?
+	ETL: Extract, Transform, and Load.
+	ETL is a process that is used to extract data from one system (such as databases, data warehouses, and data lakes), 
+	transform it into a different format (such as CSV, JSON, and XML), and load it into another system.
+
+2.	List out the various tools used in ETL
+	Informatica PowerCenter: A comprehensive ETL platform that can be used to extract, transform, and load data from a variety of sources.
+	IBM InfoSphere DataStage: A popular ETL tool that offers a wide range of features, including data cleansing, data integration, and data quality.
+	Microsoft SQL Server Integration Services (SSIS): A powerful ETL tool that is included with Microsoft SQL Server.
+
+3.	Draw the mechanism of ETL
+	Extract: The data is extracted from the source system. This can be done using a variety of methods, such as querying a database, reading a file, 
+	or extracting data from a web service.
+	Transform: The data is transformed into a different format. This may involve cleaning the data, removing duplicate records, 
+	or converting the data into a different format.
+	Load: The data is loaded into the target system. This may involve creating a new table in a database, updating an existing table, 
+	or loading the data into a data warehouse.
+
+4.	What is a datalake
+	Data lake: A centralized repository of raw data in its original format. This means that the data is not cleaned, transformed, or structured in any way.
+	Stored: Unstructured, semi-structured, and structured data.
+
+5.	What is a data warehouse
+	Data warehouse: A centralized repository of historical data. The data in a data warehouse is typically historical data that has been cleaned, 
+	transformed, and organized in a way that makes it easy to query and analyze.
+	Stored: For analysis and reporting.
+
+6.	OLTP VS OLAP
+	OLTP: Online transaction processing (OLTP) is a system that is used to process transactions in real-time. 
+	OLTP systems are typically used for applications such as customer relationship management (CRM), enterprise resource planning (ERP), and e-commerce.
+	OLAP: Online analytical processing (OLAP) is a system that is used to analyze data for insights. OLAP systems are typically used for applications 
+	such as business intelligence (BI) and data mining.
+
+7.	What are all the various analytical tools that can be connected with Datawarehouse?
+	Business intelligence (BI) tools: BI tools are used to analyze data and generate reports.
+	Data mining tools: Data mining tools are used to extract patterns and insights from data.
+	Machine learning tools: Machine learning tools are used to build models that can predict future outcomes.
+	Statistical analysis tools: Statistical analysis tools are used to calculate statistical measures such as mean, median, and standard deviation.
+	Visualization tools: Visualization tools are used to create charts and graphs that help to understand data.
+
+8.	Explain the different stages used in ETL
+	Extract: Extract data from the source system.
+	Transform: Transform the data into a format that can be loaded into the target system.
+	Load: Load the data into the target system.
+
+9.	Explain 10 use cases for NOSQL
+	Real-time big data: NoSQL databases are well-suited for real-time big data applications, such as social media analytics and fraud detection.
+	Log data: NoSQL databases can be used to store and analyze log data, which can be used to troubleshoot problems and improve performance.
+	Geospatial data: NoSQL databases can be used to store and analyze geospatial data, such as GPS data and street maps.
+	Sensor data: NoSQL databases can be used to store and analyze sensor data, such as data from IoT devices.
+	Document storage: NoSQL databases can be used to store and manage documents, such as PDFs and images.
+	Content management: NoSQL databases can be used to store and manage content, such as blog posts and product descriptions.
+	E-commerce: NoSQL databases can be used to store and manage e-commerce data, such as product catalogs and customer orders.
+	Fraud detection: NoSQL databases can be used to store and analyze data to detect fraud.
+	Personalization: NoSQL databases can be used to store and analyze data to personalize the user experience.
+	IoT: NoSQL databases can be used to store and analyze data from IoT devices.
+
+10.	What are all the characteristics of a nosql
+	Schema-less: NoSQL databases do not require a predefined schema.
+	Highly scalable: NoSQL databases can be scaled horizontally to handle large amounts of data.
+
+11.	What are all the tools used to analyse nosql
+	MongoDB Compass: A GUI tool for exploring and analyzing MongoDB databases.
+	Elasticsearch: A search engine for analyzing large amounts of data.
+	Apache Hadoop: A framework for storing and processing large amounts of data.
+	Apache Spark: A unified analytics engine for large-scale data processing.
+	Tableau: A business intelligence tool for visualizing data.
